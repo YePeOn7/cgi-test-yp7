@@ -1,0 +1,1671 @@
+char cName[64],unsigned char b8ValueType,int valInt,char valChar[256],int iMin,int iMax,unsigned int iStatusMask,unsigned short int b16Permission,unsigned int iValidFilter,void *pCallBackFunc1,long long llCallBackFunc2,long long llFuncGroup,long long llFuncGroup2,int remark
+,,#Device Information,,,,,,,,,,,
+"""device.vender""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DEVICEINFO,0,0
+"""device.manufacturer""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DEVICEINFO,0,0
+"""device.model""",2,,"""""",6,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DEVICEINFO,0,0
+"""device.firmware""",2,,"""xx.xx.xx.xxxx""",12,14,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DEVICEINFO,0,0
+"""device.hardware""",2,,"""00000000""",1,8,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DEVICEINFO,0,0
+"""device.serialnumber""",2,,"""00000000""",1,8,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DEVICEINFO,0,0
+"""device.name""",2,,"""Device Name""",1,32,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DEVICEINFO,0,0
+"""device.location""",2,,"""Device Location""",1,32,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DEVICEINFO,0,0
+"""device.boottime""",2,,"""2011/01/01 00:00:00""",8,19,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DEVICEINFO,0,0
+,,,,,,,,,,,,,
+,,#PTZ Space,,,,,,,,,,,
+"""ptz.picture_type""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+,,,,,,,,,,,,,
+,,#Wireless Setting,,,,,,,,,,,
+"""wireless.on""",1,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.enabled""",1,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.hwaddress""",2,,"""""",0,32,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.ipaddress""",2,,"""192.168.1.200""",7,16,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.netmask""",2,,"""255.255.255.0""",7,16,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.gateway""",2,,"""192.168.1.1""",7,16,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.dhcp""",1,1,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.current.ipaddress""",2,,"""""",7,16,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.current.netmask""",2,,"""""",7,16,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.current.gateway""",2,,"""""",7,16,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.savemode""",1,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+,,,,,,,,,,,,,
+,,#wireless.security -1:by EEPROM 0:Master 1:Ad-Hoc 2:Host,,,,,,,,,,,
+"""wireless.op_mode""",0,-1,"""""",0,2,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.ap_mode_support""",1,1,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.ssid""",2,,"""SSID""",0,128,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+,,#wireless.security 0:NONE 1:WEP 2:WPA-PSK 3:WPA2-PSK 4:WPS,,,,,,,,,,,
+"""wireless.security""",0,0,"""""",0,4,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+,,#wireless.wep_authentication0:Open 1:Share ,,,,,,,,,,,
+"""wireless.wep_authentication""",1,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+,,#wireless.wep_key_length 0:64bit 1:128 bit,,,,,,,,,,,
+"""wireless.wep_key_length""",1,1,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+,,#wireless.wep_key_mode 0:Manual 1:Ascii,,,,,,,,,,,
+"""wireless.wep_key_mode""",1,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+,,Active transmit key,,,,,,,,,,,
+"""wireless.wep_key_id""",0,0,"""""",0,3,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.wep_key0_64m""",2,,"""""",0,10,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.wep_key1_64m""",2,,"""""",0,10,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.wep_key2_64m""",2,,"""""",0,10,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.wep_key3_64m""",2,,"""""",0,10,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.wep_key0_64a""",2,,"""""",0,5,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.wep_key1_64a""",2,,"""""",0,5,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.wep_key2_64a""",2,,"""""",0,5,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.wep_key3_64a""",2,,"""""",0,5,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.wep_key0_128m""",2,,"""""",0,26,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.wep_key1_128m""",2,,"""""",0,26,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.wep_key2_128m""",2,,"""""",0,26,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.wep_key3_128m""",2,,"""""",0,26,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.wep_key0_128a""",2,,"""""",0,13,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.wep_key1_128a""",2,,"""""",0,13,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.wep_key2_128a""",2,,"""""",0,13,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.wep_key3_128a""",2,,"""""",0,13,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+,,#wireless.wpa_encryption 0:TKIP 1:AES,,,,,,,,,,,
+"""wireless.wpa_encryption""",1,,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.wpa_presharekey""",2,,"""""",0,128,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.wpa2_encryption""",1,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.wpa2_presharekey""",2,,"""""",0,128,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.wps_pin""",2,,"""""",0,128,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+,,#Wireless Accept Point,,,,,,,,,,,
+"""wireless.ap.size""",0,20,"""""",0,100,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_WIRELESS,0,0
+"""wireless.ap.scan""",1,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_0.ssid""",2,,"""""",0,128,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_0.mode""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_0.enc""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_0.auth""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_0.signals""",0,0,"""""",0,100,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_0.wps""",2,,"""""",0,8,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_1.ssid""",2,,"""""",0,128,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_1.mode""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_1.enc""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_1.auth""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_1.signals""",0,0,"""""",0,100,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_1.wps""",2,,"""""",0,8,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_2.ssid""",2,,"""""",0,128,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_2.mode""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_2.enc""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_2.auth""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_2.signals""",0,0,"""""",0,100,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_2.wps""",2,,"""""",0,8,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_3.ssid""",2,,"""""",0,128,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_3.mode""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_3.enc""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_3.auth""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_3.signals""",0,0,"""""",0,100,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_3.wps""",2,,"""""",0,8,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_4.ssid""",2,,"""""",0,128,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_4.mode""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_4.enc""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_4.auth""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_4.signals""",0,0,"""""",0,100,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_4.wps""",2,,"""""",0,8,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_5.ssid""",2,,"""""",0,128,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_5.mode""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_5.enc""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_5.auth""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_5.signals""",0,0,"""""",0,100,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_5.wps""",2,,"""""",0,8,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_6.ssid""",2,,"""""",0,128,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_6.mode""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_6.enc""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_6.auth""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_6.signals""",0,0,"""""",0,100,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_6.wps""",2,,"""""",0,8,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_7.ssid""",2,,"""""",0,128,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_7.mode""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_7.enc""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_7.auth""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_7.signals""",0,0,"""""",0,100,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_7.wps""",2,,"""""",0,8,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_8.ssid""",2,,"""""",0,128,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_8.mode""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_8.enc""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_8.auth""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_8.signals""",0,0,"""""",0,100,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_8.wps""",2,,"""""",0,8,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_9.ssid""",2,,"""""",0,128,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_9.mode""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_9.enc""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_9.auth""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_9.signals""",0,0,"""""",0,100,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_9.wps""",2,,"""""",0,8,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_10.ssid""",2,,"""""",0,128,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_10.mode""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_10.enc""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_10.auth""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_10.signals""",0,0,"""""",0,100,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_10.wps""",2,,"""""",0,8,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_11.ssid""",2,,"""""",0,128,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_11.mode""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_11.enc""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_11.auth""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_11.signals""",0,0,"""""",0,100,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_11.wps""",2,,"""""",0,8,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_12.ssid""",2,,"""""",0,128,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_12.mode""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_12.enc""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_12.auth""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_12.signals""",0,0,"""""",0,100,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_12.wps""",2,,"""""",0,8,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_13.ssid""",2,,"""""",0,128,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_13.mode""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_13.enc""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_13.auth""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_13.signals""",0,0,"""""",0,100,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_13.wps""",2,,"""""",0,8,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_14.ssid""",2,,"""""",0,128,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_14.mode""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_14.enc""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_14.auth""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_14.signals""",0,0,"""""",0,100,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_14.wps""",2,,"""""",0,8,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_15.ssid""",2,,"""""",0,128,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_15.mode""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_15.enc""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_15.auth""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_15.signals""",0,0,"""""",0,100,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_15.wps""",2,,"""""",0,8,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_16.ssid""",2,,"""""",0,128,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_16.mode""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_16.enc""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_16.auth""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_16.signals""",0,0,"""""",0,100,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_16.wps""",2,,"""""",0,8,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_17.ssid""",2,,"""""",0,128,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_17.mode""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_17.enc""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_17.auth""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_17.signals""",0,0,"""""",0,100,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_17.wps""",2,,"""""",0,8,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_18.ssid""",2,,"""""",0,128,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_18.mode""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_18.enc""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_18.auth""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_18.signals""",0,0,"""""",0,100,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_18.wps""",2,,"""""",0,8,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_19.ssid""",2,,"""""",0,128,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_19.mode""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_19.enc""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_19.auth""",2,,"""""",0,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_19.signals""",0,0,"""""",0,100,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""wireless.ap_19.wps""",2,,"""""",0,8,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+,,,,,,,,,,,,,
+,,#System Date Time,,,,,,,,,,,
+"""datetime.type""",0,1,"""""",0,2,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DATETIME,0,0
+"""datetime.timezone""",2,0,"""0:00""",4,8,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DATETIME,0,0
+"""datetime.year""",0,0,"""""",1970,2037,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DATETIME,0,0
+"""datetime.month""",0,0,"""""",1,12,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DATETIME,0,0
+"""datetime.day""",0,0,"""""",1,31,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DATETIME,0,0
+"""datetime.hour""",0,0,"""""",0,23,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DATETIME,0,0
+"""datetime.minute""",0,0,"""""",0,59,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DATETIME,0,0
+"""datetime.second""",0,0,"""""",0,59,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DATETIME,0,0
+"""datetime.format""",0,0,"""""",0,3,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_OSD,0,0
+"""datetime.current.year""",0,0,"""""",1970,2037,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DATETIME,0,0
+"""datetime.current.month""",0,0,"""""",1,12,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DATETIME,0,0
+"""datetime.current.day""",0,0,"""""",1,31,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DATETIME,0,0
+"""datetime.current.hour""",0,0,"""""",0,23,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DATETIME,0,0
+"""datetime.current.minute""",0,0,"""""",0,59,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DATETIME,0,0
+"""datetime.current.second""",0,0,"""""",0,59,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DATETIME,0,0
+"""datetime.dst.enabled""",0,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DATETIME,0,0
+,,#datetime.dst.type 0:force to add 1 hr   1:by time frame,,,,,,,,,,,
+"""datetime.dst.type""",0,1,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DATETIME,0,0
+"""datetime.dst.start.month""",0,1,"""""",1,12,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DATETIME,0,0
+"""datetime.dst.start.week""",0,0,"""""",0,4,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DATETIME,0,0
+"""datetime.dst.start.weekday""",0,0,"""""",0,6,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DATETIME,0,0
+"""datetime.dst.start.time""",0,0,"""""",0,23,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DATETIME,0,0
+"""datetime.dst.end.month""",0,1,"""""",1,12,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DATETIME,0,0
+"""datetime.dst.end.week""",0,0,"""""",0,4,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DATETIME,0,0
+"""datetime.dst.end.weekday""",0,0,"""""",0,6,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DATETIME,0,0
+"""datetime.dst.end.time""",0,0,"""""",0,23,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_DATETIME,0,0
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,#User Setting,,,,,,,,,,,
+"""user.size""",0,10,"""""",1,10,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_0.enabled""",0,1,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_0.username""",2,,"""admin""",1,32,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_0.password""",2,,"""admin""",4,64,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_0.userlevel""",0,0,"""""",0,16,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_1.enabled""",0,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_1.username""",2,,"""""",1,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_1.password""",2,,"""""",4,64,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_1.userlevel""",0,0,"""""",0,16,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_2.enabled""",0,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_2.username""",2,,"""""",1,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_2.password""",2,,"""""",4,64,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_2.userlevel""",0,0,"""""",0,16,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_3.enabled""",0,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_3.username""",2,,"""""",1,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_3.password""",2,,"""""",4,64,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_3.userlevel""",0,0,"""""",0,16,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_4.enabled""",0,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_4.username""",2,,"""""",1,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_4.password""",2,,"""""",4,64,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_4.userlevel""",0,0,"""""",0,16,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_5.enabled""",0,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_5.username""",2,,"""""",1,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_5.password""",2,,"""""",4,64,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_5.userlevel""",0,0,"""""",0,16,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_6.enabled""",0,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_6.username""",2,,"""""",1,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_6.password""",2,,"""""",4,64,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_6.userlevel""",0,0,"""""",0,16,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_7.enabled""",0,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_7.username""",2,,"""""",1,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_7.password""",2,,"""""",4,64,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_7.userlevel""",0,0,"""""",0,16,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_8.enabled""",0,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_8.username""",2,,"""""",1,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_8.password""",2,,"""""",4,64,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_8.userlevel""",0,0,"""""",0,16,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_9.enabled""",0,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_9.username""",2,,"""""",1,20,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_9.password""",2,,"""""",4,64,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+"""user_9.userlevel""",0,0,"""""",0,16,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_USERS,0,0
+,,#Network ,,,,,,,,,,,
+"""network.enabled""",1,1,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK,0,0
+"""network.name""",2,,"""eth0""",0,32,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK,0,0
+"""network.hwaddress""",2,,"""00:02:04:06:08:10""",0,32,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK,0,0
+"""network.ipaddress""",2,,"""192.168.1.200""",7,16,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK,0,0
+"""network.netmask""",2,,"""255.255.0.0""",7,16,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK,0,0
+"""network.gateway""",2,,"""192.168.1.254""",7,16,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK,0,0
+"""network.dhcp""",1,1,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK,0,0
+"""network.current.ipaddress""",2,,"""""",7,16,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""network.current.netmask""",2,,"""""",7,16,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""network.current.gateway""",2,,"""""",7,16,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+,,,,,,,,,,,,,
+"""ipv6.network.enabled""",1,1,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK,0,0
+"""ipv6.network.name""",2,,"""""",0,32,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK,0,0
+"""ipv6.network.hwaddress""",2,,"""""",0,32,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK,0,0
+"""ipv6.network.ipaddress""",2,,"""fe80::8a83:40ff:fe61:6915""",0,128,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK,0,0
+"""ipv6.network.netmask""",2,,"""""",7,16,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK,0,0
+"""ipv6.network.gateway""",2,,"""2001:da8:8003:801::1""",7,128,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK,0,0
+"""ipv6.network.dhcp""",2,,"""1""",0,2,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK,0,0
+"""ipv6.network.current.ipaddress""",2,,"""""",7,16,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""ipv6.network.current.netmask""",2,,"""""",7,16,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""ipv6.network.current.gateway""",2,,"""""",7,16,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""ipv6.network.prefixlength""",2,,"""64""",0,3,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK,0,0
+,,,,,,,,,,,,,
+,,#Network PPPoE,,,,,,,,,,,
+"""pppoe.enabled""",1,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK,0,0
+"""pppoe.username""",2,,"""""",0,32,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK,0,0
+"""pppoe.password""",2,,"""""",0,32,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK,0,0
+"""pppoe.smtpserverid""",0,0,"""""",0,3,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK,0,0
+"""pppoe.smtpemail""",2,,"""""",0,64,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK,0,0
+,,#Network Protocol,,,,,,,,,,,
+"""http.enabled""",1,1,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_HTTP,0,0
+"""http.advanced""",1,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_HTTP,0,0
+"""http.anonymous""",1,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_HTTP,0,0
+"""http.port""",0,80,"""""",0,65535,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_HTTP,0,0
+"""https.enabled""",1,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_HTTP,0,0
+"""https.port""",0,443,"""""",0,65535,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_HTTP,0,0
+"""https.cert.country""",2,,"""""",0,32,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_HTTP,0,0
+"""https.cert.province""",2,,"""""",0,32,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_HTTP,0,0
+"""https.cert.city""",2,,"""""",0,32,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_HTTP,0,0
+"""https.cert.org""",2,,"""""",0,32,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_HTTP,0,0
+"""https.cert.unit""",2,,"""""",0,32,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_HTTP,0,0
+"""https.cert.generic""",2,,"""""",0,32,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_HTTP,0,0
+"""https.cert.effective""",0,0,"""""",0,65535,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_HTTP,0,0
+"""https.cert.status""",1,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_HTTP,0,0
+"""https.certificate.mode""",0,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,FUNC_GROUP2_NETWORK_HTTPS,0
+"""https.enalbe.mode""",0,0,"""0""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,FUNC_GROUP2_NETWORK_HTTPS,0
+,,,,,,,,,,,,,
+"""ftp.enabled""",1,1,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_FTP,0,0
+"""ftp.anonymous""",1,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_FTP,0,0
+"""ftp.port""",0,21,"""""",0,65535,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_FTP,0,0
+"""rtsp.enabled""",1,1,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_RTSP,0,0
+"""rtsp.anonymous""",1,1,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_RTSP,0,0
+"""rtsp.port""",0,554,"""""",0,65535,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_RTSP,0,0
+"""rtsp.username""",2,,"""""",0,32,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_RTSP,0,0
+"""rtsp.password""",2,,"""""",0,64,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_RTSP,0,0
+"""rtsp.clientcount""",0,0,"""""",0,65535,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_RTSP,0,0
+"""rtspoverhttp.port""",0,554,"""""",0,65535,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_RTSP,0,0
+"""rtsp.multicast.enable""",1,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_RTSP,0,0
+"""rtsp.multicast.ip""",2,,"""239.0.0.1""",0,32,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_RTSP,0,0
+"""rtsp.multicast.vport""",0,10000,"""""",0,65535,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_RTSP,0,0
+"""rtsp.multicast.aport""",0,10001,"""""",0,65535,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_RTSP,0,0
+"""rtsp.multicast.profileid""",0,2,"""""",0,65535,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_RTSP,0,0
+"""rtsp.multicast.path""",2,,"""multicast""",0,32,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_RTSP,0,0
+"""rtsp.mtusize""",0,1500,"""""",100,10000,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_RTSP,0,0
+"""rtsp.portocol""",0,0,"""""",1,32,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_RTSP,0,0
+,,,,,,,,,,,,,
+"""upnp.enabled""",1,1,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_UPNP,0,0
+"""arpping.enabled""",1,1,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_ARPPING,0,0
+,,,,,,,,,,,,,
+,,# NTP Information,,,,,,,,,,,
+"""ntp.enabled""",1,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_NTP,0,0
+"""ntp.server""",2,,"""pool.ntp.org""",0,64,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_NTP,0,0
+,,#Dynamic DNS Information,,,,,,,,,,,
+"""ddns.enabled""",1,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_DDNS,0,0
+"""ddns.type""",0,3,"""""",0,32,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_DDNS,0,0
+"""ddns.hostname""",2,,"""""",0,32,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_DDNS,0,0
+"""ddns.username""",2,,"""""",0,32,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_DDNS,0,0
+"""ddns.password""",2,,"""""",0,32,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_DDNS,0,0
+"""ddns.status""",0,0,"""""",0,32,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_DDNS,0,0
+,,#DNS Information,,,,,,,,,,,
+"""dns.server_0""",2,,"""168.95.1.1""",0,64,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_DNS,0,0
+"""dns.server_1""",2,,"""168.95.192.1""",0,64,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_NETWORK_DNS,0,0
+"""dns.current.server_0""",2,,"""""",0,64,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""dns.current.server_1""",2,,"""""",0,64,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+,,#Event Rule,,,,,,,,,,,
+,,,,,,,,,,,,,
+"""event.size""",0,10,"""""",0,10,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event.prealarm""",0,0,"""""",0,180,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,,,,,,,,,,,,
+"""event_0.name""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,#enabled 0:Temporal disable 1:Enabled,,,,,,,,,,,
+"""event_0.enabled""",1,1,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,#periodic 0:always 1:schedule,,,,,,,,,,,
+"""event_0.periodic""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,#trigger.type 0:Schedule 1:Motion 2:Booting 3:PIR 4:GPIN,,,,,,,,,,,
+"""event_0.trigger.type""",0,0,"""""",0,2147483647,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.trigger.set""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,#channel set 0 for this platform,,,,,,,,,,,
+"""event_0.trigger.channel""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.trigger.gpin""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.trigger.window""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.trigger.volumn""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.upload.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,#servertype 0:ftp 1:http,,,,,,,,,,,
+"""event_0.upload.servertype""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,"#serverid 0,1,2,3 ..",,,,,,,,,,,
+"""event_0.upload.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,#filetype 0:jpg 1:video,,,,,,,,,,,
+"""event_0.upload.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.upload.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.upload.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.cloud.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.cloud.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.cloud.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.cloud.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.cloud.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.email.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,"#serverid 0,1,2,3 ..",,,,,,,,,,,
+"""event_0.email.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.email.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.email.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.email.to""",2,,"""""",1,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.email.subject""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.email.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.email.attach""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,#filetype 0:jpg 1:video,,,,,,,,,,,
+"""event_0.email.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.http.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.http.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.http.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,"#serverid 0,1,2,3 ..",,,,,,,,,,,
+"""event_0.http.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.http.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.tcp.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.tcp.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.tcp.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,"#serverid 0,1,2,3 ..",,,,,,,,,,,
+"""event_0.tcp.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.tcp.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.gpout.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,"#id 0,1,2,3 ..",,,,,,,,,,,
+"""event_0.gpout.id""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.record.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.record.postalarm""",0,10,"""""",1,900,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.record.interval""",0,5,"""""",0,900,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.name""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.periodic""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.trigger.type""",0,0,"""""",0,2147483647,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.trigger.set""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.trigger.channel""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.trigger.gpin""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.trigger.window""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.trigger.volumn""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.upload.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.upload.servertype""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.upload.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.upload.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.upload.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.upload.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.cloud.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.cloud.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.cloud.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.cloud.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.cloud.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.email.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.email.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.email.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.email.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.email.to""",2,,"""""",1,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.email.subject""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.email.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.email.attach""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.email.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.http.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.http.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.http.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.http.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.http.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.tcp.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.tcp.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.tcp.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.tcp.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.tcp.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.gpout.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.gpout.id""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.record.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.record.postalarm""",0,10,"""""",1,900,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.record.interval""",0,5,"""""",0,900,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.name""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.periodic""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.trigger.type""",0,0,"""""",0,2147483647,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.trigger.set""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.trigger.channel""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.trigger.gpin""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.trigger.window""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.trigger.volumn""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.upload.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.upload.servertype""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.upload.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.upload.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.upload.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.upload.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.cloud.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.cloud.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.cloud.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.cloud.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.cloud.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.email.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.email.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.email.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.email.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.email.to""",2,,"""""",1,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.email.subject""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.email.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.email.attach""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.email.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.http.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.http.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.http.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.http.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.http.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.tcp.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.tcp.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.tcp.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.tcp.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.tcp.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.gpout.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.gpout.id""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.record.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.record.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.record.interval""",0,5,"""""",0,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.name""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.periodic""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.trigger.type""",0,0,"""""",0,2147483647,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.trigger.set""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.trigger.channel""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.trigger.gpin""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.trigger.window""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.trigger.volumn""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.upload.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.upload.servertype""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.upload.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.upload.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.upload.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.upload.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.cloud.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.cloud.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.cloud.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.cloud.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.cloud.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.email.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.email.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.email.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.email.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.email.to""",2,,"""""",1,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.email.subject""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.email.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.email.attach""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.email.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.http.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.http.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.http.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.http.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.http.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.tcp.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.tcp.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.tcp.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.tcp.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.tcp.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.gpout.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.gpout.id""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.record.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.record.postalarm""",0,10,"""""",1,900,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.record.interval""",0,5,"""""",0,900,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.name""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.periodic""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.trigger.type""",0,0,"""""",0,2147483647,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.trigger.set""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.trigger.channel""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.trigger.gpin""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.trigger.window""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.trigger.volumn""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.upload.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.upload.servertype""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.upload.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.upload.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.upload.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.upload.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.cloud.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.cloud.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.cloud.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.cloud.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.cloud.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.email.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.email.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.email.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.email.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.email.to""",2,,"""""",1,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.email.subject""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.email.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.email.attach""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.email.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.http.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.http.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.http.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.http.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.http.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.tcp.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.tcp.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.tcp.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.tcp.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.tcp.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.gpout.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.gpout.id""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.record.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.record.postalarm""",0,10,"""""",1,900,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.record.interval""",0,5,"""""",0,900,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.name""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.periodic""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.trigger.type""",0,0,"""""",0,2147483647,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.trigger.set""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.trigger.channel""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.trigger.volumn""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.trigger.gpin""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.trigger.window""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.upload.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.upload.servertype""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.upload.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.upload.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.upload.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.upload.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.cloud.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.cloud.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.cloud.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.cloud.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.cloud.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.email.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.email.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.email.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.email.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.email.to""",2,,"""""",1,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.email.subject""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.email.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.email.attach""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.email.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.http.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.http.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.http.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.http.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.http.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.tcp.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.tcp.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.tcp.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.tcp.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.tcp.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.gpout.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.gpout.id""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.record.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.record.postalarm""",0,10,"""""",1,900,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.record.interval""",0,5,"""""",0,900,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.name""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.periodic""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.trigger.type""",0,0,"""""",0,2147483647,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.trigger.set""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.trigger.channel""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.trigger.gpin""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.trigger.window""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.trigger.volumn""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.upload.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.upload.servertype""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.upload.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.upload.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.upload.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.upload.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.cloud.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.cloud.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.cloud.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.cloud.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.cloud.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.email.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.email.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.email.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.email.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.email.to""",2,,"""""",1,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.email.subject""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.email.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.email.attach""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.email.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.http.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.http.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.http.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.http.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.http.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.tcp.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.tcp.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.tcp.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.tcp.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.tcp.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.gpout.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.gpout.id""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.record.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.record.postalarm""",0,10,"""""",1,900,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.record.interval""",0,5,"""""",0,900,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.name""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.periodic""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.trigger.type""",0,0,"""""",0,2147483647,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.trigger.set""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.trigger.channel""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.trigger.gpin""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.trigger.window""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.trigger.volumn""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.upload.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.upload.servertype""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.upload.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.upload.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.upload.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.upload.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.cloud.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.cloud.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.cloud.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.cloud.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.cloud.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.email.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.email.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.email.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.email.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.email.to""",2,,"""""",1,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.email.subject""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.email.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.email.attach""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.email.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.http.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.http.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.http.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.http.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.http.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.tcp.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.tcp.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.tcp.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.tcp.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.tcp.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.gpout.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.gpout.id""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.record.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.record.postalarm""",0,10,"""""",1,900,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.record.interval""",0,5,"""""",0,900,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.name""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.periodic""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.trigger.type""",0,0,"""""",0,2147483647,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.trigger.set""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.trigger.channel""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.trigger.gpin""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.trigger.window""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.trigger.volumn""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.upload.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.upload.servertype""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.upload.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.upload.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.upload.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.upload.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.cloud.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.cloud.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.cloud.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.cloud.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.cloud.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.email.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.email.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.email.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.email.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.email.to""",2,,"""""",1,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.email.subject""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.email.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.email.attach""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.email.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.http.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.http.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.http.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.http.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.http.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.tcp.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.tcp.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.tcp.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.tcp.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.tcp.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.gpout.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.gpout.id""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.record.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.record.postalarm""",0,10,"""""",1,900,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.record.interval""",0,5,"""""",0,900,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.name""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.periodic""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.trigger.type""",0,0,"""""",0,2147483647,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.trigger.set""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.trigger.channel""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.trigger.gpin""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.trigger.window""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.trigger.volumn""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.upload.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.upload.servertype""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.upload.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.upload.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.upload.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.upload.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.cloud.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.cloud.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.cloud.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.cloud.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.cloud.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.email.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.email.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.email.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.email.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.email.to""",2,,"""""",1,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.email.subject""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.email.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.email.attach""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.email.filetype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.http.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.http.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.http.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.http.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.http.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.tcp.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.tcp.postalarm""",0,10,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.tcp.interval""",0,5,"""""",1,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.tcp.serverid""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.tcp.message""",2,,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.gpout.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.gpout.id""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.record.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.record.postalarm""",0,10,"""""",1,900,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.record.interval""",0,5,"""""",0,900,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,,,,,,,,,,,,
+"""event_0.upload.path""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.upload.path""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.upload.path""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.upload.path""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.upload.path""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.upload.path""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.upload.path""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.upload.path""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.upload.path""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.upload.path""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,,,,,,,,,,,,
+"""event_0.upload.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.upload.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.upload.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.upload.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.upload.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.upload.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.upload.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.upload.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.upload.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.upload.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,,,,,,,,,,,,
+"""event_0.cloud.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.cloud.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.cloud.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.cloud.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.cloud.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.cloud.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.cloud.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.cloud.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.cloud.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.cloud.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,,,,,,,,,,,,
+"""event_0.cloud.record.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.cloud.record.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.cloud.record.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.cloud.record.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.cloud.record.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.cloud.record.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.cloud.record.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.cloud.record.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.cloud.record.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.cloud.record.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,,,,,,,,,,,,
+"""event_0.email.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.email.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.email.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.email.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.email.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.email.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.email.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.email.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.email.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.email.from""",0,,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,,,,,,,,,,,,
+"""event_0.upload.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.upload.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.upload.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.upload.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.upload.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.upload.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.upload.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.upload.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.upload.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.upload.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,,,,,,,,,,,,
+"""event_0.email.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.email.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.email.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.email.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.email.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.email.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.email.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.email.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.email.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.email.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,,,,,,,,,,,,
+"""event_0.email.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.email.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.email.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.email.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.email.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.email.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.email.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.email.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.email.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.email.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,,,,,,,,,,,,
+"""event_0.email.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.email.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.email.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.email.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.email.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.email.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.email.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.email.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.email.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.email.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,,,,,,,,,,,,
+"""event_0.schedule_0""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.schedule_1""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.schedule_2""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.schedule_3""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.schedule_4""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.schedule_5""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.schedule_6""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,,,,,,,,,,,,
+"""event_1.schedule_0""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.schedule_1""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.schedule_2""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.schedule_3""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.schedule_4""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.schedule_5""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.schedule_6""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,,,,,,,,,,,,
+"""event_2.schedule_0""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.schedule_1""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.schedule_2""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.schedule_3""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.schedule_4""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.schedule_5""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.schedule_6""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,,,,,,,,,,,,
+"""event_3.schedule_0""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.schedule_1""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.schedule_2""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.schedule_3""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.schedule_4""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.schedule_5""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.schedule_6""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,,,,,,,,,,,,
+"""event_4.schedule_0""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.schedule_1""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.schedule_2""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.schedule_3""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.schedule_4""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.schedule_5""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.schedule_6""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,,,,,,,,,,,,
+"""event_5.schedule_0""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.schedule_1""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.schedule_2""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.schedule_3""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.schedule_4""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.schedule_5""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.schedule_6""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,,,,,,,,,,,,
+"""event_6.schedule_0""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.schedule_1""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.schedule_2""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.schedule_3""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.schedule_4""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.schedule_5""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.schedule_6""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,,,,,,,,,,,,
+"""event_7.schedule_0""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.schedule_1""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.schedule_2""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.schedule_3""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.schedule_4""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.schedule_5""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.schedule_6""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,,,,,,,,,,,,
+"""event_8.schedule_0""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.schedule_1""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.schedule_2""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.schedule_3""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.schedule_4""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.schedule_5""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.schedule_6""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,,,,,,,,,,,,
+"""event_9.schedule_0""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.schedule_1""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.schedule_2""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.schedule_3""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.schedule_4""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.schedule_5""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.schedule_6""",2,,"""000000000000000000000000""",0,24,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+"""event_0.alarminterval""",0,0,"""""",0,86400,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.alarminterval""",0,0,"""""",0,86400,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.alarminterval""",0,0,"""""",0,86400,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.alarminterval""",0,0,"""""",0,86400,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.alarminterval""",0,0,"""""",0,86400,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.alarminterval""",0,0,"""""",0,86400,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.alarminterval""",0,0,"""""",0,86400,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.alarminterval""",0,0,"""""",0,86400,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.alarminterval""",0,0,"""""",0,86400,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.alarminterval""",0,0,"""""",0,86400,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,,,,,,,,,,,,
+"""event_0.upload.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.upload.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.upload.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.upload.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.upload.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.upload.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.upload.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.upload.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.upload.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.upload.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,,,,,,,,,,,,
+"""event_0.upload.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.upload.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.upload.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.upload.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.upload.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.upload.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.upload.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.upload.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.upload.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.upload.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,,,,,,,,,,,,
+,,#Event FTP Server,,,,,,,,,,,
+"""server.ftp.size""",0,4,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_0.name""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_0.ipaddress""",2,,"""""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_0.port""",0,21,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_0.path""",2,,"""""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_0.anonymous""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_0.username""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_0.password""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_0.createfolder""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_1.name""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_1.ipaddress""",2,,"""""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_1.port""",0,21,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_1.path""",2,,"""""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_1.anonymous""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_1.username""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_1.password""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_1.createfolder""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_2.name""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_2.ipaddress""",2,,"""""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_2.port""",0,21,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_2.path""",2,,"""""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_2.anonymous""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_2.username""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_2.password""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_2.createfolder""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_3.name""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_3.ipaddress""",2,,"""""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_3.port""",0,21,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_3.path""",2,,"""""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_3.anonymous""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_3.username""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_3.password""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+"""server.ftp_3.createfolder""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_FTP,0,0
+,,#Event SMTP Server,,,,,,,,,,,
+"""server.smtp.size""",0,4,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_0.name""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_0.ipaddress""",2,,"""""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_0.port""",0,25,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_0.auth""",0,0,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_0.username""",2,,"""""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_0.password""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_0.sender""",2,,"""""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_0.ssl""",1,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_0.to""",2,0,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_0.subject""",2,0,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_0.message""",2,0,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_1.name""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_1.ipaddress""",2,,"""""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_1.port""",0,25,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_1.auth""",0,0,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_1.username""",2,,"""""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_1.password""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_1.sender""",2,,"""""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_1.ssl""",1,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_1.to""",2,0,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_1.subject""",2,0,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_1.message""",2,0,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_2.name""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_2.ipaddress""",2,,"""""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_2.port""",0,25,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_2.auth""",0,0,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_2.username""",2,,"""""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_2.password""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_2.sender""",2,,"""""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_2.ssl""",1,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_2.to""",2,0,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_2.subject""",2,0,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_2.message""",2,0,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_3.name""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_3.ipaddress""",2,,"""""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_3.port""",0,25,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_3.auth""",0,0,"""""",0,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_3.username""",2,,"""""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_3.password""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_3.sender""",2,,"""""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_3.ssl""",1,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_3.to""",2,0,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_3.subject""",2,0,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+"""server.smtp_3.message""",2,0,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_SMTP,0,0
+,,#Event HTTP Server,,,,,,,,,,,
+"""server.http.size""",0,4,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_HTTP,0,0
+"""server.http_0.name""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_HTTP,0,0
+"""server.http_0.ipaddress""",2,,"""""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_HTTP,0,0
+"""server.http_0.username""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_HTTP,0,0
+"""server.http_0.password""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_HTTP,0,0
+"""server.http_1.name""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_HTTP,0,0
+"""server.http_1.ipaddress""",2,,"""""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_HTTP,0,0
+"""server.http_1.username""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_HTTP,0,0
+"""server.http_1.password""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_HTTP,0,0
+"""server.http_2.name""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_HTTP,0,0
+"""server.http_2.ipaddress""",2,,"""""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_HTTP,0,0
+"""server.http_2.username""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_HTTP,0,0
+"""server.http_2.password""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_HTTP,0,0
+"""server.http_3.name""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_HTTP,0,0
+"""server.http_3.ipaddress""",2,,"""""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_HTTP,0,0
+"""server.http_3.username""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_HTTP,0,0
+"""server.http_3.password""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_HTTP,0,0
+,,#Event TCPServer,,,,,,,,,,,
+"""server.tcp.size""",0,4,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_TCP,0,0
+"""server.tcp_0.name""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_TCP,0,0
+"""server.tcp_0.ipaddress""",2,,"""""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_TCP,0,0
+"""server.tcp_0.port""",0,0,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_TCP,0,0
+"""server.tcp_1.name""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_TCP,0,0
+"""server.tcp_1.ipaddress""",2,,"""""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_TCP,0,0
+"""server.tcp_1.port""",0,0,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_TCP,0,0
+"""server.tcp_2.name""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_TCP,0,0
+"""server.tcp_2.ipaddress""",2,,"""""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_TCP,0,0
+"""server.tcp_2.port""",0,0,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_TCP,0,0
+"""server.tcp_3.name""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_TCP,0,0
+"""server.tcp_3.ipaddress""",2,,"""""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_TCP,0,0
+"""server.tcp_3.port""",0,0,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_SERVER_TCP,0,0
+,,,,,,,,,,,,,
+,,#Event Montion Window,,,,,,,,,,,
+"""motion.size""",0,4,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_0.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_0.status""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""motion_0.videosource""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_0.name""",2,,"""window[1]""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_0.color""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_0.x""",0,10,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_0.y""",0,10,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_0.width""",0,128,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_0.height""",0,128,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_0.duration""",0,3,"""""",0,60,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_0.frequence""",0,3,"""""",1,900,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_0.threshold""",0,3,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_0.sensitivity""",0,60,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_0.mb_time_th""",0,3,"""""",0,255,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_0.rolling_prot_th""",0,30,"""""",0,255,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_0.sad_offset""",0,150,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_0.threshold_night""",0,50,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_0.sensitivity_night""",0,50,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_0.sad_offset_night""",0,150,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+,,,,,,,,,,,,,
+"""motion_1.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_1.status""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""motion_1.videosource""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_1.name""",2,,"""window[2]""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_1.color""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_1.x""",0,10,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_1.y""",0,10,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_1.width""",0,128,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_1.height""",0,128,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_1.duration""",0,5,"""""",0,60,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_1.frequence""",0,5,"""""",1,900,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_1.threshold""",0,50,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_1.sensitivity""",0,50,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_1.mb_time_th""",0,3,"""""",0,255,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_1.rolling_prot_th""",0,30,"""""",0,255,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_1.sad_offset""",0,150,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_1.threshold_night""",0,50,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_1.sensitivity_night""",0,50,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_1.sad_offset_night""",0,150,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+,,,,,,,,,,,,,
+"""motion_2.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_2.status""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""motion_2.videosource""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_2.name""",2,,"""window[3]""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_2.color""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_2.x""",0,10,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_2.y""",0,10,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_2.width""",0,128,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_2.height""",0,128,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_2.duration""",0,5,"""""",0,60,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_2.frequence""",0,5,"""""",1,900,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_2.threshold""",0,50,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_2.sensitivity""",0,50,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_2.mb_time_th""",0,3,"""""",0,255,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_2.rolling_prot_th""",0,30,"""""",0,255,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_2.sad_offset""",0,150,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_2.threshold_night""",0,50,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_2.sensitivity_night""",0,50,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_2.sad_offset_night""",0,150,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+,,,,,,,,,,,,,
+"""motion_3.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_3.status""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""motion_3.videosource""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_3.name""",2,,"""window[3]""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_3.color""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_3.x""",0,10,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_3.y""",0,10,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_3.width""",0,128,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_3.height""",0,128,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_3.duration""",0,5,"""""",0,60,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_3.frequence""",0,5,"""""",1,900,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_3.threshold""",0,50,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_3.sensitivity""",0,50,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_3.mb_time_th""",0,3,"""""",0,255,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_3.rolling_prot_th""",0,30,"""""",0,255,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_3.sad_offset""",0,150,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_3.threshold_night""",0,50,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_3.sensitivity_night""",0,50,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+"""motion_3.sad_offset_night""",0,150,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_MOTION,0,0
+,,,,,,,,,,,,,
+"""hardware.model""",2,0,"""""",0,32,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.modelshow""",2,0,"""""",0,32,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.sensor""",2,0,"""""",0,32,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.ethernet""",0,1,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.wireless""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.wps""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.wps_pin""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.wpsled""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.wpsled_pin""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.macled""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.macled_pin""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.loaddefault""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.loaddefault_pin""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.poe""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.videoin""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.videoout""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.audioin""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.audioout""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.audiohalf""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.powerled""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.powerled_pin""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.sysentled""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.sysentled_pin""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.irled""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.irled_pin""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.icr""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.icr_0.pin""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.icr_1.pin""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.pir""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.pir_pin""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.lightsensor""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.lightsensor_pin""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.whitebalance""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.gpin""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.gpin_0.pin""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.gpin_1.pin""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.gpout""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.gpout_0.pin""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.gpout_1.pin""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.serialport""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.tvstandards""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.exposure_mode""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.maxexposure_time""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.maxgain""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.mirror""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.flip""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.mic""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.linein""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.usbstorage""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.sdcard""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.iris""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.eventled""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.eventled_pin""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.temperature""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""hardware.humidity""",0,0,"""""",0,16,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+,,#Audio Source,,,,,,,,,,,
+"""audio.size""",0,1,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_AUDIO,0,0
+"""audio.enabled""",1,1,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_AUDIO,0,0
+"""audio.codec""",0,1,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_AUDIO,0,0
+"""audio.channel""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_AUDIO,0,0
+"""audio.samplerate""",0,8000,"""""",0,65536,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_AUDIO,0,0
+"""audio.resolution""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_AUDIO,0,0
+"""audio.inputtype""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_AUDIO,0,0
+"""audio.volumnin""",0,80,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_AUDIO,0,0
+"""audio.volumnout""",0,80,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_AUDIO,0,0
+"""audio.threshold""",0,40,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_AUDIO,0,0
+,,,,,,,,,,,,,
+"# System realtime status include GPIO, PIR - BIT select",,#Video Source,,,,,,,,,,,
+"""arcstatus.action.mask.upload""",0,0,"""""",0,8192,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""arcstatus.action.mask.email""",0,0,"""""",0,8192,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""arcstatus.action.mask.http""",0,0,"""""",0,8192,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""arcstatus.action.mask.tcp""",0,0,"""""",0,8192,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""arcstatus.action.mask.cloud""",0,0,"""""",0,8192,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+,,,,,,,,,,,,,
+"""arcstatus.event_0.upload.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""arcstatus.event_1.upload.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""arcstatus.event_2.upload.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""arcstatus.event_3.upload.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""arcstatus.event_4.upload.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""arcstatus.event_5.upload.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""arcstatus.event_6.upload.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""arcstatus.event_7.upload.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""arcstatus.event_8.upload.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""arcstatus.event_9.upload.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,,,,,,,,,,,,
+"""arcstatus.event_0.cloud.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""arcstatus.event_1.cloud.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""arcstatus.event_2.cloud.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""arcstatus.event_3.cloud.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""arcstatus.event_4.cloud.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""arcstatus.event_5.cloud.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""arcstatus.event_6.cloud.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""arcstatus.event_7.cloud.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""arcstatus.event_8.cloud.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""arcstatus.event_9.cloud.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,,,,,,,,,,,,
+"""arcstatus.event_0.email.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""arcstatus.event_1.email.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""arcstatus.event_2.email.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""arcstatus.event_3.email.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""arcstatus.event_4.email.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""arcstatus.event_5.email.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""arcstatus.event_6.email.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""arcstatus.event_7.email.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""arcstatus.event_8.email.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""arcstatus.event_9.email.filename""",2,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,,,,,,,,,,,,
+,,#Media Profile,,,,,,,,,,,
+"""profile.size""",0,3,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile.rotation""",1,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_0.name""",2,,"""v01""",0,20,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_0.enabled""",1,1,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_0.encode_type""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_0.resolution.width""",0,1920,"""""",128,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_0.resolution.height""",0,1080,"""""",80,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_0.encode.resolution.width""",0,1920,"""""",128,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_0.encode.resolution.height""",0,1080,"""""",80,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_0.framerate""",0,20,"""""",1,25,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_0.gop""",0,20,"""""",1,25,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_0.quality.value""",0,40,"""""",1,51,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_0.quality.max""",0,50,"""""",1,51,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_0.quality.min""",0,30,"""""",1,51,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_0.jpeg_quality""",0,50,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_0.ratecontrol.mode""",0,1,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_0.ratecontrol.bitratemax""",0,2000,"""""",1,4000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_0.ratecontrol.bitratemin""",0,512,"""""",1,4000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_0.ratecontrol.bitrate""",0,1024,"""""",1,4000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_1.name""",2,,"""v02""",0,20,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_1.enabled""",1,1,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_1.encode_type""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_1.resolution.width""",0,1280,"""""",128,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_1.resolution.height""",0,720,"""""",80,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_1.encode.resolution.width""",0,1280,"""""",128,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_1.encode.resolution.height""",0,720,"""""",80,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_1.framerate""",0,15,"""""",1,15,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_1.gop""",0,15,"""""",1,15,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_1.quality.value""",0,40,"""""",1,51,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_1.quality.max""",0,50,"""""",1,51,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_1.quality.min""",0,30,"""""",1,51,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_1.jpeg_quality""",0,50,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_1.ratecontrol.mode""",0,1,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_1.ratecontrol.bitratemax""",0,2000,"""""",1,4000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_1.ratecontrol.bitratemin""",0,512,"""""",1,4000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_1.ratecontrol.bitrate""",0,1024,"""""",1,4000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_2.name""",2,,"""v03""",0,20,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_2.enabled""",1,1,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_2.encode_type""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_2.resolution.width""",0,640,"""""",128,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_2.resolution.height""",0,360,"""""",80,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_2.encode.resolution.width""",0,640,"""""",128,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_2.encode.resolution.height""",0,360,"""""",80,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_2.framerate""",0,25,"""""",1,25,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_2.gop""",0,25,"""""",1,25,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_2.quality.value""",0,40,"""""",1,51,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_2.quality.max""",0,50,"""""",1,51,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_2.quality.min""",0,30,"""""",1,51,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_2.jpeg_quality""",0,50,"""""",1,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_2.ratecontrol.mode""",0,1,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_2.ratecontrol.bitratemax""",0,512,"""""",1,4000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_2.ratecontrol.bitratemin""",0,128,"""""",1,4000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+"""profile_2.ratecontrol.bitrate""",0,256,"""""",1,4000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PROFILE,0,0
+,,#Imaging Setting,,,,,,,,,,,
+"""imaging.size""",0,1,"""""",0,10,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""imaging_0.brightness""",0,50,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_BRIGHTNESS,0,0
+"""imaging_0.brightness_night""",0,50,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_BRIGHTNESS,0,0
+"""imaging_0.hue""",0,50,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_HUE,0,0
+"""imaging_0.hue_night""",0,50,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_HUE,0,0
+"""imaging_0.contrast""",0,50,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_CONTRAST,0,0
+"""imaging_0.contrast_night""",0,50,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_CONTRAST,0,0
+"""imaging_0.saturation""",0,50,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_COLORSATURATION,0,0
+"""imaging_0.saturation_night""",0,50,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_COLORSATURATION,0,0
+"""imaging_0.sharpness""",0,50,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_SHARPNESS,0,0
+"""imaging_0.sharpness_night""",0,50,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_SHARPNESS,0,0
+"""imaging_0.denoise""",0,4,"""""",1,7,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_DENOISE,0,0
+"""imaging_0.denoise_night""",0,4,"""""",1,7,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_DENOISE,0,0
+"""imaging_0.wdr.enabled""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_WDR,0,0
+"""imaging_0.wdr.value""",0,50,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_WDR,0,0
+"""imaging_0.wdr_night.enabled""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_WDR,0,0
+"""imaging_0.wdr_night.value""",0,50,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_WDR,0,0
+"""imaging_0.gamma""",0,3,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_GAMMA,0,0
+"""imaging_0.gamma_night""",0,3,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_GAMMA,0,0
+"""imaging_0.denoise_3d""",0,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_ALL,0,0
+"""imaging_0.denoise_3d_night""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_ALL,0,0
+"""imaging_0.dehaze""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_ALL,0,0
+"""imaging_0.dehaze_night""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_ALL,0,0
+"""imaging_0.detail""",0,4,"""""",1,7,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_ALL,0,0
+"""imaging_0.detail_night""",0,4,"""""",1,7,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_ALL,0,0
+,,,,,,,,,,,,,
+"""imaging_0.exposure.enabled""",0,1,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_EXPOSURE,0,0
+"""imaging_0.exposure.mode""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_EXPOSURE,0,0
+"""imaging_0.exposure.priority""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_EXPOSURE,0,0
+"""imaging_0.exposure.window.mode""",0,3,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_EXPOSURE,0,0
+"""imaging_0.exposure.window.x""",0,0,"""""",0,1920,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_EXPOSURE,0,0
+"""imaging_0.exposure.window.y""",0,0,"""""",0,1080,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_EXPOSURE,0,0
+"""imaging_0.exposure.window.width""",0,0,"""""",0,1920,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_EXPOSURE,0,0
+"""imaging_0.exposure.window.height""",0,0,"""""",0,1080,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_EXPOSURE,0,0
+"""imaging_0.exposure.gain.max""",0,16,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_EXPOSURE_GAIN,0,0
+"""imaging_0.exposure.gain.min""",0,1,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_EXPOSURE_GAIN,0,0
+"""imaging_0.exposure.gain.value""",0,1,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_EXPOSURE_GAIN,0,0
+"""imaging_0.exposure.iris.min""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_EXPOSURE_IRIS,0,0
+"""imaging_0.exposure.iris.max""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_EXPOSURE_IRIS,0,0
+"""imaging_0.exposure.iris.enabled""",0,1,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_EXPOSURE_IRIS,0,0
+"""imaging_0.exposure.iris.value""",0,1,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_EXPOSURE_IRIS,0,0
+"""imaging_0.exposure.exp0""",0,1,"""""",1,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_EXPOSURE_EXPOSURE_TIME,0,0
+"""imaging_0.exposure.exp1""",0,30,"""""",1,10000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_EXPOSURE_EXPOSURE_TIME,0,0
+"""imaging_0.exposure.exposuretime.value""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_EXPOSURE_EXPOSURE_TIME,0,0
+"""imaging_0.exposure.exposuretime.max""",0,33333,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_EXPOSURE_EXPOSURE_TIME,0,0
+"""imaging_0.exposure.exposuretime.min""",0,100,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_EXPOSURE_EXPOSURE_TIME,0,0
+"""imaging_0.exposure.exposuretime.target""",0,60,"""""",0,255,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_EXPOSURE_EXPOSURE_TIME,0,0
+"""imaging_0.exposure.exposuretime.speed""",0,256,"""""",1,512,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_EXPOSURE_EXPOSURE_TIME,0,0
+"""imaging_0.exposure.exposuretime.sensitivity""",0,4,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_EXPOSURE_EXPOSURE_TIME,0,0
+"""imaging_0.exposure.flickerfree""",0,3,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_EXPOSURE_FLICKERFREE,0,0
+"""imaging_0.exposure.nightmode.enabled""",0,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_EXPOSURE_EXPOSURE_TIME,0,0
+"""imaging_0.exposure.nightmode.exp0""",0,1,"""""",1,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_EXPOSURE_EXPOSURE_TIME,0,0
+"""imaging_0.exposure.nightmode.exp1""",0,15,"""""",1,30,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_EXPOSURE_EXPOSURE_TIME,0,0
+"""imaging_0.exposure.nightmode.gain""",0,15,"""""",1,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_EXPOSURE_GAIN,0,0
+,,,,,,,,,,,,,
+"""imaging_0.wb.enable""",1,1,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_WB,0,0
+"""imaging_0.wb.scenemode""",0,0,"""""",0,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_WB,0,0
+"""imaging_0.sensor.mirror""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_MIRROR,0,0
+"""imaging_0.sensor.flip""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_FLIP,0,0
+"""imaging_0.bwmode""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_BWMODE,0,0
+"""imaging_0.osd.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_OSD,0,0
+"""imaging_0.osd.text.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_OSD,0,0
+"""imaging_0.osd.text.string""",2,,"""IP CAMERA""",0,41,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_OSD,0,0
+"""imaging_0.osd.datetime.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_OSD,0,0
+"""imaging_0.osd.position""",0,0,"""""",0,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_OSD,0,0
+"""imaging_0.osd.motion""",0,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_OSD,0,0
+"""imaging_0.led.mode""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_IRICR,0,0
+"""imaging_0.led.on""",0,1,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_IRICR,0,0
+"""imaging_0.led.status""",0,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_IRICR,0,0
+"""imaging_0.led.dayhour""",0,6,"""""",0,23,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_IRICR,0,0
+"""imaging_0.led.dayminute""",0,0,"""""",0,59,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_IRICR,0,0
+"""imaging_0.led.nighthour""",0,18,"""""",0,23,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_IRICR,0,0
+"""imaging_0.led.nightminute""",0,0,"""""",0,59,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_IRICR,0,0
+"""imaging_0.led.gpinnumber""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_IRICR,0,0
+"""imaging_0.led.gpinstatus""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_IRICR,0,0
+"""imaging_0.focus.mode""",0,0,"""""",0,16,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_FOCUS,0,0
+"""imaging_0.focus.speed""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_FOCUS,0,0
+"""imaging_0.focus.limit.near""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_FOCUS,0,0
+"""imaging_0.focus.limit.far""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_FOCUS,0,0
+"""imaging_0.pir.duration""",0,5,"""""",5,30,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_PIR,0,0
+"""imaging_0.pir.frequence""",0,5,"""""",1,60,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_PIR,0,0
+"""imaging_0.pir.sensitivity""",0,85,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_PIR,0,0
+"""imaging_0.pir.time""",0,0,"""""",0,2147483647,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IMAGING_PIR,0,0
+"""imaging_0.pir.status""",0,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""imaging_0.lightsensor.adc.night""",0,0,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""imaging_0.lightsensor.adc.day""",0,0,"""""",0,100,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""imaging_0.lightsensor.status""",0,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+,,,,,,,,,,,,,
+,,#EVENT SERVER IO,,,,,,,,,,,
+"""gpio.input.size""",0,2,"""""",0,256,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IO,0,0
+"""gpio.input_0.delaytime""",0,5,"""""",0,256,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IO,0,0
+"""gpio.input_0.idelstate""",1,1,"""""",0,256,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IO,0,0
+"""gpio.input_0.status""",0,0,"""""",0,256,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""gpio.input_1.delaytime""",0,5,"""""",0,256,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IO,0,0
+"""gpio.input_1.idelstate""",1,1,"""""",0,256,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IO,0,0
+"""gpio.input_1.status""",0,0,"""""",0,256,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+,,,,,,,,,,,,,
+"""gpio.output.size""",0,2,"""""",0,256,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IO,0,0
+"""gpio.output_0.delaytime""",0,5,"""""",0,256,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IO,0,0
+"""gpio.output_0.idelstate""",1,1,"""""",0,256,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IO,0,0
+"""gpio.output_0.status""",0,0,"""""",0,256,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""gpio.output_1.delaytime""",0,5,"""""",0,256,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IO,0,0
+"""gpio.output_1.idelstate""",1,1,"""""",0,256,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IO,0,0
+"""gpio.output_1.status""",0,0,"""""",0,256,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+,,,,,,,,,,,,,
+"""gpio.powerled.enabled""",1,1,"""""",0,1,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IO,0,0
+"""gpio.liveviewled.enabled""",1,1,"""""",0,1,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IO,0,0
+"""gpio.recordled.enabled""",1,1,"""""",0,1,,OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_IO,0,0
+,,,,,,,,,,,,,
+,,#Storage,,,,,,,,,,,
+"""storage.type""",0,2,"""""",0,255,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_STORAGE_CHANGE,0,0
+"""storage.samba.path""",2,,"""""",0,63,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_STORAGE_CHANGE,0,0
+"""storage.samba.ip""",2,,"""""",0,63,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_STORAGE_CHANGE,0,0
+"""storage.samba.username""",2,,"""""",0,63,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_STORAGE_CHANGE,0,0
+"""storage.samba.auth""",0,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_STORAGE_CHANGE,0,0
+"""storage.samba.password""",2,,"""""",0,63,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_STORAGE_CHANGE,0,0
+"""storage.free""",0,0,"""""",-1,0xefffffff,,OP_R | ADMIN_R,,,,,0,0
+"""storage.total""",0,0,"""""",-1,0xefffffff,,OP_R | ADMIN_R,,,,,0,0
+"""storage.serialnumber""",0,0,"""""",0,2147483647,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,,0,0
+"""storage.recycle""",0,1,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_STORAGE_CHANGE,0,0
+"""storage.record.maxlength""",0,15,"""""",10,900,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""storage.filetype""",0,2,"""""",1,8,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""storage.status""",0,0,"""""",0,255,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_STORAGE_CHANGE,0,0
+"""storage.ready""",0,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_STORAGE_CHANGE,0,0
+,,,,,,,,,,,,,
+,,#Private Mask Window,,,,,,,,,,,
+"""privmask.size""",0,3,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_0.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_0.videosource""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_0.name""",2,,"""window[0]""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_0.color""",0,0,"""""",0,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_0.x""",0,10,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_0.y""",0,10,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_0.width""",0,128,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_0.height""",0,128,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_0.transparent""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_1.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_1.videosource""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_1.name""",2,,"""window[1]""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_1.color""",0,0,"""""",0,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_1.x""",0,10,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_1.y""",0,10,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_1.width""",0,128,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_1.height""",0,128,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_1.transparent""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_2.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_2.videosource""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_2.name""",2,,"""window[2]""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_2.color""",0,0,"""""",0,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_2.x""",0,10,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_2.y""",0,10,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_2.width""",0,128,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_2.height""",0,128,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_2.transparent""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_3.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_3.videosource""",0,0,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_3.name""",2,,"""window[2]""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_3.color""",0,0,"""""",0,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_3.x""",0,10,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_3.y""",0,10,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_3.width""",0,128,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_3.height""",0,128,"""""",0,65535,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+"""privmask_3.transparent""",0,0,"""""",0,3,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_PRIVMASK,0,0
+,,,,,,,,,,,,,
+"""event_0.snapshot.enabled""",0,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.snapshot.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.snapshot.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.snapshot.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.snapshot.postalarm""",0,10,"""""",0,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.snapshot.interval""",0,5,"""""",0,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.snapshot.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.record.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.record.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_0.record.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.snapshot.enabled""",0,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.snapshot.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.snapshot.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.snapshot.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.snapshot.postalarm""",0,10,"""""",0,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.snapshot.interval""",0,5,"""""",0,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.snapshot.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.record.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.record.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.record.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.snapshot.enabled""",0,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.snapshot.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.snapshot.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.snapshot.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.snapshot.postalarm""",0,10,"""""",0,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.snapshot.interval""",0,5,"""""",0,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.snapshot.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.record.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.record.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.record.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.snapshot.enabled""",0,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.snapshot.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.snapshot.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.snapshot.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.snapshot.postalarm""",0,10,"""""",0,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.snapshot.interval""",0,5,"""""",0,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.snapshot.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.record.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.record.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.record.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.snapshot.enabled""",0,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.snapshot.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.snapshot.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.snapshot.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.snapshot.postalarm""",0,10,"""""",0,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.snapshot.interval""",0,5,"""""",0,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.snapshot.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.record.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.record.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.record.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.snapshot.enabled""",0,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.snapshot.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.snapshot.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.snapshot.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.snapshot.postalarm""",0,10,"""""",0,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.snapshot.interval""",0,5,"""""",0,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.snapshot.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.record.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.record.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.record.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.snapshot.enabled""",0,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.snapshot.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.snapshot.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.snapshot.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.snapshot.postalarm""",0,10,"""""",0,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.snapshot.interval""",0,5,"""""",0,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.snapshot.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.record.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.record.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.record.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.snapshot.enabled""",0,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.snapshot.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.snapshot.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.snapshot.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.snapshot.postalarm""",0,10,"""""",0,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.snapshot.interval""",0,5,"""""",0,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.snapshot.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.record.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.record.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.record.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.snapshot.enabled""",0,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.snapshot.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.snapshot.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.snapshot.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.snapshot.postalarm""",0,10,"""""",0,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.snapshot.interval""",0,5,"""""",0,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.snapshot.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.record.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.record.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.record.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.snapshot.enabled""",0,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.snapshot.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.snapshot.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.snapshot.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.snapshot.postalarm""",0,10,"""""",0,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.snapshot.interval""",0,5,"""""",0,90000,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.snapshot.fps""",0,1,"""""",1,5,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.record.from""",0,0,"""""",0,6,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.record.filename""",2,,"""""",0,80,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.record.suffix""",0,0,"""""",0,2,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,,,,,,,,,,,,
+"""event_0.audioout.enabled""",0,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_1.audioout.enabled""",0,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_2.audioout.enabled""",0,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_3.audioout.enabled""",0,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_4.audioout.enabled""",0,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_5.audioout.enabled""",0,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_6.audioout.enabled""",0,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_7.audioout.enabled""",0,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_8.audioout.enabled""",0,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+"""event_9.audioout.enabled""",0,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,FUNC_GROUP_EVENT_RULE,0,0
+,,,,,,,,,,,,,
+"""onvif.wsse.enabled""",0,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""onvif.wsd.enabled""",1,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+,,,,,,,,,,,,,
+"""flash.size""",2,,"""16""",0,4,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+,,,,,,,,,,,,,
+"""p2p.enabled""",0,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""p2p.uid""",2,,"""""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""p2p.notify.enabled""",0,1,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""p2p.notify.interval""",0,15,"""""",0,600,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""p2p.dvr.enabled""",0,0,"""""",0,1,,ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""p2p.pushalert.enabled""",1,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""p2p.manual.record.starttime""",0,0,"""""",0,1,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+,,,,,,,,,,,,,
+"""internet.status""",0,-1,"""""",-1,4,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+,,,,,,,,,,,,,
+"""cloud.baseurl""",2,,"""https://ipcam.arcelikiot.com""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""cloud.endpoints.auth""",2,,"""/auth""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""cloud.endpoints.events""",2,,"""/events""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""cloud.appliance.id""",2,,"""""",0,256,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""cloud.primarytoken""",2,,"""""",0,128,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+,,,,,,,,,,,,,
+"""ZZZZ""",2,,"""YYYY""",0,32,,OP_W | ADMIN_W | OP_R | ADMIN_R,VPI_FILTER_VAL_TYPE,,,0,0,0
+"""AAAAA""",2,,"""BBBBB""",,,,,,,,,,
